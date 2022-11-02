@@ -4,7 +4,7 @@
 #
 Name     : R-fstcore
 Version  : 0.9.12
-Release  : 6
+Release  : 7
 URL      : https://cran.r-project.org/src/contrib/fstcore_0.9.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fstcore_0.9.12.tar.gz
 Summary  : R Bindings to the 'Fstlib' Library
