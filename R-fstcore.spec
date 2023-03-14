@@ -4,7 +4,7 @@
 #
 Name     : R-fstcore
 Version  : 0.9.14
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/fstcore_0.9.14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fstcore_0.9.14.tar.gz
 Summary  : R Bindings to the 'Fstlib' Library
@@ -19,9 +19,6 @@ BuildRequires : buildreq-R
 BuildRequires : buildreq-cmake
 BuildRequires : pkgconfig(liblz4)
 BuildRequires : pkgconfig(libzstd)
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 'fst' format. The 'fst' format allows for random access of stored data and compression with the 'LZ4' and 'ZSTD'
@@ -53,10 +50,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1673542493
+export SOURCE_DATE_EPOCH=1678820542
 
 %install
-export SOURCE_DATE_EPOCH=1673542493
+export SOURCE_DATE_EPOCH=1678820542
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-fstcore
 cp %{_builddir}/fstcore/LICENSE %{buildroot}/usr/share/package-licenses/R-fstcore/9cf097120d3d9eea0e9790d7d44ae80e6231a35a || :
